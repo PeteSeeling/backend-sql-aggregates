@@ -3,7 +3,17 @@
 -- GROUP BY the film_id
 -- ORDER in descending order
 -- LIMIT 10
+
+
 SELECT
-    title
+title,
+*,
+SUM(rental_duration)
 FROM
+film
+GROUP BY
+ film.film_id;
+ 
+
+
     
