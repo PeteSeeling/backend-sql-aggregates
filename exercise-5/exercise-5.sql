@@ -3,3 +3,7 @@ SELECT
 SUM(length)
 FROM
 inventory
+INNER JOIN 
+film
+ON
+film.film_id = inventory.film_id
